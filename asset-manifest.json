@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/test-pr-home/static/css/main.a7c15a8f.css",
+    "main.js": "/test-pr-home/static/js/main.5e474412.js",
+    "static/media/home-1.png": "/test-pr-home/static/media/home-1.fe799e180310e200a82f.png",
+    "static/media/grid-1-2.png": "/test-pr-home/static/media/grid-1-2.1146404ce051ee4e83e6.png",
+    "static/media/grid-2-2.png": "/test-pr-home/static/media/grid-2-2.aa69379a0cccc0bab84b.png",
+    "static/media/contact-us.png": "/test-pr-home/static/media/contact-us.2ce51f0c23a7efcea520.png",
+    "static/media/grid-3-3.png": "/test-pr-home/static/media/grid-3-3.3b1e57a153cb60ef6fc4.png",
+    "static/media/grid-2-1.png": "/test-pr-home/static/media/grid-2-1.2d4cb36d857ddce34750.png",
+    "static/media/lightbox2.png": "/test-pr-home/static/media/lightbox2.a7c9ae95e7d0a0e8592d.png",
+    "static/media/lightbox1.png": "/test-pr-home/static/media/lightbox1.a73fb26ce0f5bd270dea.png",
+    "static/media/TT Hoves Pro Trial Regular.woff": "/test-pr-home/static/media/TT Hoves Pro Trial Regular.465f8b2f7fd87fa14623.woff",
+    "static/media/lightbox3.png": "/test-pr-home/static/media/lightbox3.8fee460dfff322d2b547.png",
+    "static/media/logo2.svg": "/test-pr-home/static/media/logo2.e33061f24319c9d4aca34b24580d5020.svg",
+    "static/media/logo-white.svg": "/test-pr-home/static/media/logo-white.4039a2095c9e4e80244449ccec29314e.svg",
+    "index.html": "/test-pr-home/index.html",
+    "main.a7c15a8f.css.map": "/test-pr-home/static/css/main.a7c15a8f.css.map",
+    "main.5e474412.js.map": "/test-pr-home/static/js/main.5e474412.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7c15a8f.css",
+    "static/js/main.5e474412.js"
+  ]
+}
