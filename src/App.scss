@@ -1,0 +1,861 @@
+@import 'reset.scss';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('./assets/fonts/TT\ Hoves\ Pro\ Trial\ Regular.woff');
+}
+
+*,
+::after,
+::before {
+    box-sizing: content-box !important;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 102px;
+}
+
+.bg-body-tertiary {
+    background-color: #fff;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.logo {}
+
+.nav {
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 60px;
+}
+
+.nav-item {
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+
+    a {
+        font-family: 'TT Hoves';
+        color: #333333;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        height: 26px;
+        width: 68px;
+    }
+}
+
+.nav-item:hover {
+    border-top: 1px solid #2C2C2C;
+    border-bottom: 1px solid #2C2C2C;
+
+}
+
+.container-pr-h {
+    width: 100%;
+    height: 922px;
+    display: flex;
+    align-items: center;
+}
+
+.pr-home-carousel-controls {
+    display: flex;
+    flex-direction: column;
+    width: 535px;
+    height: 100%;
+    justify-content: center;
+    gap: 60px;
+
+    h1 {
+        font-size: 64px;
+        font-weight: 700;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-family: 'TT Hoves';
+        text-transform: uppercase;
+
+    }
+
+    #grey {
+        color: #BDBDBD;
+        font-size: 64px;
+        font-weight: 300;
+    }
+
+}
+
+.btns {
+    button {
+        font-family: 'TT Hoves';
+
+        width: 52px;
+        height: 53px;
+        border: none;
+        background-color: #fff;
+        border: 1px solid #F2F2F2;
+        color: #2C2C2C;
+        font-size: 14px;
+        transition: ease-out 0.5s;
+        -webkit-transition: ease-out 0.5s;
+        -moz-transition: ease-out 0.5s;
+    }
+
+    button:hover {
+        background-color: #8D8D8D;
+        border-color: #8D8D8D;
+    }
+}
+
+.parts {}
+
+.show-more {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-transform: uppercase;
+    width: 221px;
+    height: 71px;
+    border: none;
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    color: #333333;
+    justify-content: center;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+
+}
+
+.white::after,
+.white::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.white::after {
+    top: -3px;
+    left: -3px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.white::before {
+    bottom: -3px;
+    right: -3px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.white:hover {
+    color: #222222;
+}
+
+.white:hover::after,
+.white:hover::before {
+    width: calc(50% + 3px);
+    height: calc(50% + 3px);
+    border-color: #222222;
+}
+
+.white-sec {
+    position: relative;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+}
+
+.white-sec::after,
+.white-sec::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.white-sec::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.white-sec::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.white-sec:hover {
+    color: #222222;
+}
+
+.white-sec:hover::after,
+.white-sec:hover::before {
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border-color: #222222;
+}
+
+.pr-home-carousel {
+    width: 770px;
+    height: 829px;
+
+
+    .white {
+        position: relative;
+        z-index: 2;
+        bottom: 71px;
+    }
+}
+
+.about-us-container {
+    width: 100%;
+    height: 495px;
+}
+
+.grey {
+    height: 465px;
+    background-color: #80808054;
+    display: flex;
+}
+
+.images-container {
+    // padding-left: 100px;
+    // width: 570px;
+    padding-left: 92px;
+    width: 605px;
+
+    img {
+        padding-left: 10px;
+        padding-right: 14px;
+    }
+
+    #second {
+        position: relative;
+        z-index: 2;
+        top: 60px;
+    }
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: space-around;
+
+    h2 {
+        font-family: 'TT Hoves';
+
+        color: #BDBDBD;
+        font-weight: 300;
+        font-size: 64px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 16px;
+        color: #000000;
+        font-family: 'TT Hoves';
+
+    }
+}
+
+.main-goals-container {
+    width: 100%;
+    margin-bottom: 120px;
+    margin-top: 120px;
+
+    h1 {
+        font-size: 64px;
+        font-weight: 300;
+        color: #BDBDBD;
+        margin-bottom: 60px;
+        font-family: 'TT Hoves';
+
+    }
+
+}
+
+.goals {
+    display: flex;
+}
+
+.goals-item {
+    display: flex;
+    width: 50%;
+    gap: 30px;
+
+    p {
+        color: #333;
+        // font-family: TT Hoves;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        width: 420px;
+        height: 144px;
+        font-family: 'TT Hoves';
+
+    }
+}
+
+.our-project-container {
+    width: 100%;
+
+    h1 {
+        font-size: 64px;
+        font-weight: 300;
+        color: #BDBDBD;
+        font-family: 'TT Hoves';
+
+    }
+
+
+}
+
+.grey-btn {
+    margin-top: 30px;
+    width: 221px;
+    height: 71px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s 0.1s;
+    background-color: transparent;
+    padding: 0;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 300;
+        font-family: 'TT Hoves';
+        color: #fff;
+        position: absolute;
+        transition: 0.2s 0.1s;
+        top: 25px;
+        left: 53px;
+        z-index: 3;
+        }
+
+    span:hover {
+        color: rgb(28, 31, 30);
+        transition: 0.2s 0.1s;
+    }
+}
+
+.grey-btn:hover {
+    color: rgb(158, 207, 191);
+    transition: 0.2s 0.1s;
+}
+
+.grey-btn::before {
+    background-color: #090a0a;
+    transition: 0.3s ease-out;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.grey-btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'TT Hoves';
+    color: #fff;
+    position: absolute;
+    transition: 0.2s 0.1s;
+    top: 25px;
+    left: 53px;
+    z-index: 3;
+}
+
+.grey-btn.hover-filled-slide-down::before {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.grey-btn.hover-filled-slide-down:hover::before {
+    height: 0%;
+}
+.grey-btn.right{
+    display: flex;
+    justify-content: flex-end;
+    // width: 100%;
+    span{
+        position: absolute;
+    }
+}
+
+.right {
+    margin-right: 145px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-row {
+    display: flex;
+    gap: 30px;
+}
+
+.contact-us-container {
+    width: 100%;
+    margin-bottom: 120px;
+
+    h1 {
+        font-size: 64px;
+        font-weight: 300;
+        color: #BDBDBD;
+        font-family: 'TT Hoves';
+
+    }
+
+    p {
+        padding-left: 40px;
+        color: #333;
+        // font-family: TT Hoves;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.42px;
+        font-family: 'TT Hoves';
+
+    }
+
+}
+
+.form-container {
+    display: flex;
+    gap: 30px;
+
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+
+
+    input {
+        width: 391px;
+        height: 46px;
+        background-color: #F3F3F3;
+        color: #8D8D8D;
+        // font-family: TT Hoves;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: 'TT Hoves';
+
+        letter-spacing: 0.56px;
+        border: none;
+        padding-left: 24px;
+    }
+
+    #mail-input {
+        width: 391px;
+        height: 147px;
+        font-family: 'TT Hoves';
+
+    }
+
+}
+
+
+.form-img {
+    width: 749px;
+    height: 369px;
+}
+
+footer {
+    background-color: #2C2C2C;
+    height: 417px;
+
+
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 85px;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 147px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: #FFF;
+        // font-family: TT Hoves;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        font-family: 'TT Hoves';
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            color: #FFF;
+            // font-family: TT Hoves;
+            font-size: 14px;
+            font-style: normal;
+            font-family: 'TT Hoves';
+
+            font-weight: 500;
+            line-height: 24px;
+            /* 171.429% */
+            letter-spacing: 0.42px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: #FFF;
+        // font-family: TT Hoves;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        font-family: 'TT Hoves';
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            color: #FFF;
+            // font-family: TT Hoves;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0.42px;
+            margin-bottom: 16px;
+            font-family: 'TT Hoves';
+
+
+            span {
+                color: #fff;
+                margin-right: 19px;
+            }
+        }
+    }
+
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: #FFF;
+        font-family: 'TT Hoves';
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        padding-left: 0;
+        align-items: center;
+        display: flex;
+        gap: 40px;
+
+        li {
+            a {
+                font-family: 'TT Hoves';
+
+                color: #fff;
+            }
+        }
+    }
+}
+
+.rights {
+    width: 100%;
+    border-top: 1px solid #fff;
+    color: rgba(200, 200, 200, 0.50);
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.project-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.modal-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+
+    img {
+        width: 100%;
+        height: 463px;
+    }
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+
+    // display: none;
+    img {
+        width: 100%;
+    }
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    // opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.column-demo {
+    width: 20%;
+    object-fit: contain;
+
+    img {
+        height: 118px;
+    }
+
+}
+
+.column-demo-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .img-resp {
+        width: 20vw;
+    }
+
+    .goals {
+        flex-direction: column;
+        gap: 135px;
+    }
+
+    .project-column {
+        width: 20vw;
+
+        img {
+            width: 100%;
+            height: 120px;
+        }
+    }
+
+    .form-img {
+        img {
+            width: 53vw;
+        }
+    }
+
+    .our-project-container {
+        margin-top: 277px;
+    }
+
+    footer {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    h2 {
+        font-size: 41px !important;
+    }
+
+    h1 {
+        font-size: 53px !important;
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footer-nav {
+        gap: 18px;
+    }
+
+    .contacts {
+        ul {
+            li {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .info {
+        ul {
+            li {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .images-container {
+        padding-left: 14px;
+        width: 468px;
+    }
+
+    .grey {
+        height: fit-content;
+    }
+
+    .form-actions {
+        input {
+            width: 84vw;
+        }
+    }
+
+    .pr-home-carousel {
+        width: 100%;
+        height: fit-content;
+    }
+}
